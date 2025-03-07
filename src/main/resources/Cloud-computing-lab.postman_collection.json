@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "c6ad0d43-4615-4e6d-843c-e3d9c63f6748",
+		"name": "Cloud-computing-lab",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42669189"
+	},
+	"item": [
+		{
+			"name": "getUsers",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://spring-boot-rest-api-1060482787831.us-central1.run.app/api/v1/users",
+					"protocol": "https",
+					"host": [
+						"spring-boot-rest-api-1060482787831",
+						"us-central1",
+						"run",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserID",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://spring-boot-rest-api-1060482787831.us-central1.run.app/api/v1/users/2",
+					"protocol": "https",
+					"host": [
+						"spring-boot-rest-api-1060482787831",
+						"us-central1",
+						"run",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createUsers",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstName\": \"Oscar\",\n  \"lastName\": \"Diaz\",\n  \"email\": \"oscar.diaz@example.com\",\n  \"createdBy\": \"system_user\",\n  \"updatedBy\": \"system_user\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://spring-boot-rest-api-1060482787831.us-central1.run.app/api/v1/users",
+					"protocol": "https",
+					"host": [
+						"spring-boot-rest-api-1060482787831",
+						"us-central1",
+						"run",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateUser",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstName\": \"Oscar\",\n  \"lastName\": \"Diaz\",\n  \"email\": \"oscar.diaz@example.com\",\n  \"createdBy\": \"system_user\",\n  \"updatedBy\": \"system_user\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://spring-boot-rest-api-1060482787831.us-central1.run.app/api/v1/users/1",
+					"protocol": "https",
+					"host": [
+						"spring-boot-rest-api-1060482787831",
+						"us-central1",
+						"run",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUser",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://spring-boot-rest-api-1060482787831.us-central1.run.app/api/v1/users/2",
+					"protocol": "https",
+					"host": [
+						"spring-boot-rest-api-1060482787831",
+						"us-central1",
+						"run",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
